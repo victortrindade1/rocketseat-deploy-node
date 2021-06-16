@@ -38,15 +38,14 @@ qqr momento com o comando `ssh-keygen -lf (path até .ssh)/.ssh/id_dsa.pub`
 
 ### Gerar uma nova SSH Key: ssh-keygen
 
-> ssh-keygen não funciona no Ruindows. Se tiver Ruindows use PuTTY
-
-Antes, crie uma pasta `.ssh` onde vc quer guardar a key.
+> ssh-keygen não funciona no Ruindows. Se tiver Ruindows use PuTTY ou outro OpenSSH
 
 No terminal: `ssh-keygen`
 
 "Enter file in which to save the key (/home/victor/.ssh/id_rsa):"
 
-Coloque o path de .ssh: `/home/victor/documentos/node/.ssh/id_rsa`
+Aqui vc pode colocar o path q quer sua chave, mas o ideal é deixar no root e
+sempre usar ela nos servidores.
 
 "Enter passphrase (empty for no passphrase):"
 
@@ -58,3 +57,5 @@ O `id_rsa.pub` é a chave pública, q vc cadastra no servidor.
 Adicione a chave pública ao servidor
 
 ![fig3](./fig3.png)
+
+Crie o Droplet. Ele demorará uns 2 minutos pra ser criado.
