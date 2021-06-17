@@ -23,20 +23,24 @@ Crie a pasta .ssh na pasta do usuário criado:
 ```
 cd /home/deploy/
 mkdir .ssh
+cd .ssh/
 ```
 
-Copie `authorized_keys` de .ssh do root: `cp ~/.ssh/authorized_keys /home/deploy/.ssh`
+Copie `authorized_keys` de .ssh do root pro .ssh do usuário:
+`cp ~/.ssh/authorized_keys /home/deploy/.ssh`
 
-> Se já estiver na pasta .ssh do usuário, basta digitar "ponto" q vai direto.
+> Se o terminal já estiver na pasta .ssh do usuário, basta digitar "ponto" q vai direto.
+
 > Ex: root@deploy-bootcamp:/home/deploy/.ssh# `cp ~/.ssh/authorized_keys .`
 
-Agora, o dono de `authorized_keys` copiada precisa trocar de root pro novo
+Agora, o dono de `authorized_keys` copiada precisa ser trocado de root pro novo
 usuário deploy:
 
 root@deploy-bootcamp:/home/deploy/.ssh# `chown deploy:deploy authorized_keys`
 
-Dê um `exit` e re-conecta com o novo usuário deploy. Em vez de `ssh root@<ip_servidor>`, agora acesse com `ssh deploy@<ip_servidor>`. Logado como
-usuário, lembre-se q agora precisará colocar `sudo` na frente do q quiser q
+Dê um `exit` e re-conecte com o novo usuário deploy. Em vez de
+`ssh root@<ip_servidor>`, agora acesse com `ssh deploy@<ip_servidor>`. Logado
+como usuário, lembre-se q agora precisará colocar `sudo` na frente do q quiser q
 tenha poder admin ;)
 
 ## Ferramentas para instalar
@@ -47,7 +51,7 @@ Veja se já tem git. Se não tiver, instale. `git -v`
 Node:
 `sudo apt install nodejs`
 
-NPM
+NPM:
 `sudo apt install npm`
 
 Para verificar: `node -v` e `npm -v`.
