@@ -52,6 +52,9 @@ Node:
 `sudo apt install nodejs`
 
 NPM:
+
+Não faz muita diferença usar npm ou yarn pra produção.
+
 `sudo apt install npm`
 
 Para verificar: `node -v` e `npm -v`.
