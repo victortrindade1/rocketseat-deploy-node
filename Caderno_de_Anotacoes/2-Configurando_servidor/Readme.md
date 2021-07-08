@@ -3,6 +3,10 @@
 Acesse o terminal do servidor. P/ acessar o terminal do servidor:
 `ssh root@<ip_servidor>`. Ex: `ssh root@172.28.164.14`
 
+Ou, se já tiver criado o usuário, vc pd já logar no home do usuário:
+`ssh deploy@<ip_servidor>`. Ex: `ssh deploy@172.28.164.14`
+Onde `deploy` é o nome do usuário.
+
 Atualize o servidor: `apt update && apt upgrade`
 
 ## Usuário admin
