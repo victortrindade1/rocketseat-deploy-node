@@ -46,7 +46,7 @@ tenha poder admin ;)
 ## Ferramentas para instalar
 
 Git:
-Veja se já tem git. Se não tiver, instale. `git -v`
+Veja se já tem git. Se não tiver, instale. `git --version`
 
 Node:
 `sudo apt install nodejs`
