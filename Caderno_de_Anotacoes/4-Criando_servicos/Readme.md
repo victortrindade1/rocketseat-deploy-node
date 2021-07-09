@@ -85,18 +85,18 @@ Pra salvar no vim: Esc + `:wq`
 Para criar o banco no server, vou fazer via CLI. Pra isso, preciso acessar o `psql`, q é a CLI do postgres.
 
 Pra acessar o `psql` do server:
-1- Acesse o `bash` do postgres
-No server: 
+
+1. Acesse o `bash` do postgres. No server: 
 deploy@deploy-bootcamp:~/gobarber$  `docker exec -i -t postgres /bin/sh`
 
-2- No bash do postgres, troque para o usuário postgres:
+2. No bash do postgres, troque para o usuário postgres:
 $ `su postgres`
 
-3- Acesse o psql:
+3. Acesse o psql:
 postgres=# `psql`
 
-4- Crie o banco:
+4. Crie o banco:
 postgres=# `CREATE DATABASE bootcampnodejs;`
 
-5- Saia:
+5. Saia:
 postgres=# `\q` > exit > exit
