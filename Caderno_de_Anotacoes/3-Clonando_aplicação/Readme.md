@@ -12,7 +12,7 @@ no github pelo servidor pra clonar.
 
 1- Clone o backend no home (home é o root do usuário). Customize um nome como
 segundo parâmetro:
-`git clone https://github.com/victortrindade1/rocketseat-fastfeet-backend.git gobarber`
+`git clone https://github.com/victortrindade1/rocketseat-backend.git gobarber`
 
 2- Acesse a pasta do app e dê um `npm install`.
 

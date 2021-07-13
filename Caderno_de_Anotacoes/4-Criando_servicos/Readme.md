@@ -1,7 +1,7 @@
 # Criando serviços
 
-Antes de configurar o banco de dados, vou configurar o server pra usar o docker sem precisar do `sudo`, pois o 
-usuário `deploy` é admin. Na documentação do docker: https://docs.docker.com/engine/install/linux-postinstall/
+Antes de configurar o banco de dados, vou configurar o server pra usar o docker sem precisar do `sudo`, pois o
+usuário `deploy` é admin. Na documentação do docker: <https://docs.docker.com/engine/install/linux-postinstall/>
 
 No server:
 `sudo groupadd docker`
@@ -86,7 +86,7 @@ Para criar o banco no server, vou fazer via CLI. Pra isso, preciso acessar o `ps
 
 Pra acessar o `psql` do server:
 
-1. Acesse o `bash` do postgres. No server: 
+1. Acesse o `bash` do postgres. No server:
 deploy@deploy-bootcamp:~/gobarber$  `docker exec -i -t postgres /bin/sh`
 
 2. No bash do postgres, troque para o usuário postgres:
